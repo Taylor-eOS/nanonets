@@ -4,3 +4,4 @@ torch
 accelerate
 torchvision
 PyMuPDF
+reportlab

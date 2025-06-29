@@ -62,7 +62,8 @@ def process_pdf(doc, basename, image_folder, processed_folder, model, processor)
         resized = resize_image(cropped)
         resized.save(proc_path)
         text = ocr_page(proc_path, model, processor)
-        output_lines.append(f"{text.strip()}\n")
+        page_number = f"---Page {i+1}---\n"
+        output_lines.append(f"{page_number}{text.strip()}\n")
     return output_lines
 
 def main():
