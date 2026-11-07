@@ -1,6 +1,7 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
 pillow
 transformers
-torch
 accelerate
 torchvision
 PyMuPDF
